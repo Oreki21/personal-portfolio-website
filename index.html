@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oreki's Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h2 id="logo">@HarshCodes</h2>
+        <nav>
+            <ul class="nav-items-container" id="items-container">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+
+            <!-- Hamburger menu -->
+            <div class="hamburger-icon" id="hamburger-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="off-screen-menu" id="off-screen-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="heading-container">
+            <h1>Hi, I'm Harsh, <span id="break-point"></span> a Web Developer</h1>
+            <h2>A self-taught, curious, <wbr></wbr>and passionate coder</h2>
+        </div>
+        <a href="#projects">Explore my works</a>
+    </section>
+
+    <section id="about">
+        <div class="img-container">
+            <img src="./assets/Oreki.jpg" alt="placeholder image">
+        </div>
+        <div class="details-container">
+            <h2>Hey! I’m Harsh. Nice to meet you</h2>
+            <p>I love creating websites that look good and actually work the way people expect. Right now, I’m practicing with HTML, CSS, and JavaScript, and slowly building up my skills project by project. When I’m not coding, you’ll usually find me exploring new tech, learning design tricks, or just geeking out about cool apps and ideas.</p>   
+            <h3>Actively Learning</h3>
+            <ul>
+                <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React, jQuery</li>
+                <li><strong>CSS Frameworks:</strong> Bootstrap, Tailwind CSS</li>
+                <li><strong>Backend:</strong> Node.js, Express, EJS</li>
+                <li><strong>Database:</strong> MongoDB, Mongoose</li>
+                <li><strong>Version Control:</strong> Git</li>
+            </ul>
+            <a href="#projects" class="view-work-btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <a href="#" class="project-card">
+                <div class="image-container">
+                    <img src="https://picsum.photos/300/200" alt="placeholder image">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <h3>Project 1 - Title</h3>
+            </a>
+            <a href="#" class="project-card">
+                <div class="image-container">
+                    <img src="https://picsum.photos/300/200" alt="placeholder image">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <h3>Project 2 - Title</h3>
+            </a>
+            <a href="#" class="project-card"> 
+                <div class="image-container">
+                    <img src="https://picsum.photos/300/200" alt="placeholder image">
+                    <div class="overlay">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <h3>Project 3 - Title</h3>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Let's Connect</h2>
+        <div class="contact-links">
+            <a href="https://github.com/Oreki21" target="_blank" class="contact-card">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="#" target="_blank" class="contact-card">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="#" target="_blank" class="contact-card"> 
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="#" class="contact-card">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p>© <span id="year"></span> <a href="https://github.com/Oreki21" target="_blank">Harsh</a>. Built with ❤️ using HTML, CSS & JS</p>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
